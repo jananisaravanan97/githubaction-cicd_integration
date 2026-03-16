@@ -18,14 +18,4 @@ public class CicdWorkflowApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CicdWorkflowApplication.class, args);
 	}
-
-
-//	echo "# githubaction-cicd_integration" >> README.md
-//	git init
-//	git add README.md
-//	git commit -m "first commit"
-//	git branch -M main
-//	git remote add origin https://github.com/jananisaravanan97/githubaction-cicd_integration.git
-//	git push -u origin main
-
 }
