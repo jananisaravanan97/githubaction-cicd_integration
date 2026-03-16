@@ -1,4 +1,9 @@
 FROM eclipse-temurin:21-jdk
-COPY target/springboot-images-new.jar springboot-images-new.jar
+
+WORKDIR /app
+
+COPY target/springboot-images-new.jar app.jar
+
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","springboot-images-new.jar"]
+
+ENTRYPOINT ["java","-jar","app.jar"]
